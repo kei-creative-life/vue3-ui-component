@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import VerticalTimeLine from '../components/VerticalTimeLine/VerticalTimeLine.vue'
+import VerticalTimeLine from '../src/components/VerticalTimeLine/VerticalTimeLine.vue'
 
 const sections = [
   { title: 'タイトル1', content: 'ここに文章を入れます。ここに文章を入れます。ここに文章を入れます' },
@@ -8,10 +8,10 @@ const sections = [
 </script>
 
 <template>
-  <!-- <WindowBox /> -->
+  <ProgressRectangle width="48" height="48" color="black" />
+  <ProgressCircular width="48" height="48" color="blue" />
   <VerticalTimeLine :sections="sections" />
-  <!-- <ProgressRectangle />
-  <ProgressCircular width="48" height="48" color="blue" /> -->
+  <WindowBox />
   <TerminalBox />
 </template>
 

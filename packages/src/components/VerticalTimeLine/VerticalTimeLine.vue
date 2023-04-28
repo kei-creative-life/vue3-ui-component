@@ -31,7 +31,7 @@ const styles = computed(() => ({
   <div class="vertical-time-line" :styles="styles">
     <section v-for="(section, index) of sections" :key="index" class="vertical-time-line__section">
       <div class="vertical-time-line__label">
-        {{ `Step ${index}` }}
+        {{ `Step ${index + 1}` }}
       </div>
       <p class="vertical-time-line__title">
         {{ section.title }}

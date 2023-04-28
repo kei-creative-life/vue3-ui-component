@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import createUiComponent from '../components/main'
+import createUiComponent from '../src/components/main'
 
 createApp(App).use(createUiComponent).mount('#app')
 
